@@ -1,0 +1,21 @@
+Bank Application
+Scenario: you are a beacon developer and need to create an application to handle new customer bake account request
+Your application should do the following:
+ Read a .csv file of names, Social Security numbers, account types, and initial deposit
+ Use a proper data structure to hold these accounts
+ Both savings and checking accounts share the following properties:
+deposit()
+withdraw()
+transfer()
+showInfo()
+
+11 – digit account number (generated with the following process: 1 or 2 depending on Savings or Checking,
+ last two digits of SSN, and random 3-digit number)
+ 
+ Savings account holders are given a safety deposit box, identified by a 3 digit number and access by a 4 digit code
+ Checking account holders are assigned a Debit card with a 3-digit number and 4-digit pin
+ Both accounts will be use an interface that determines the base interest rate.
+Saving accounts will use .25 points less then the base rate
+Checking accounts will use 15% of the base rate
+ The showInfo method should reveal relevant account information as well as information 
+specific to the checking account or savings account.
